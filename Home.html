@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeroAsha – Find Hospitals Near You</title>
+    <link rel="stylesheet" href="Home.css" />
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">MeroAsha</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="emergency.html">Emergency</a></li>
+                <li><a href="appointment.html">Appointments</a></li>
+                <li><a href="#pregnancy">Pregnancy Care</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Find the Best Hospitals Near You</h1>
+        <p>Search emergency units, book appointments, and explore maternity care services.</p>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search hospitals...">
+            <button onclick="searchHospital()">Search</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+
+        <div class="feature-card" id="emergency">
+            <img src="images/Healthcare.jpg" alt="Emergency healthcare unit">
+            <h3>Emergency Care</h3>
+            <p>Find 24/7 emergency care units near you.</p>
+        </div>
+
+        <div class="feature-card" id="appointment">
+            <img src="images/Appointment.jpg" alt="Doctor appointment booking">
+            <h3>Appointments</h3>
+            <p>Book doctor appointments instantly.</p>
+        </div>
+
+        <div class="feature-card" id="pregnancy">
+            <img src="images/Pregnancy-Care.png" alt="Pregnancy and maternity care">
+            <h3>Pregnancy Care</h3>
+            <p>Explore maternity and gynaecology services.</p>
+        </div>
+
+    </section>
+
+    <!-- Hospital List -->
+    <section class="hospital-section">
+        <h2>Hospitals Near You</h2>
+        <div class="hospital-container" id="hospitalList">
+            <!-- JS Will Inject Hospitals -->
+        </div>
+    </section>
+
+    <script src="Home.js"></script>
+</body>
+</html>

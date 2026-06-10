@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment - MeroAsha</title>
+    <link rel="stylesheet" href="appointment.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+    <div class="logo">MeroAsha</div>
+    <div class="menu-toggle" id="mobile-menu">☰</div>
+    <ul class="nav-links">
+        <li><a href="Home.html">Home</a></li>
+        <li><a class="active" href="appointment.html">Book Appointment</a></li>
+    </ul>
+</nav>
+
+<!-- BOOKING FORM -->
+<div class="container">
+    <h2>Book Appointment</h2>
+
+    <label>Select Doctor</label>
+    <select id="doctor">
+        <option value="">-- Choose Doctor --</option>
+        <option>Dr. Sharma (Cardiologist)</option>
+        <option>Dr. Mehta (Dermatologist)</option>
+        <option>Dr. Kumar (General Physician)</option>
+    </select>
+
+    <label>Select Date</label>
+    <input type="date" id="date">
+
+    <button onclick="book()">Book Appointment</button>
+
+    <div id="msg"></div>
+</div>
+
+<script src="appointment.js"></script>
+
+</body>
+</html>
